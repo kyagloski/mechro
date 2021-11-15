@@ -1,4 +1,5 @@
 # mechro  <br />
+*Auto hot key Macro script to control audio devices and media*    <br />
 **Script needs to be run with admin privs**   <br />
   <br />
 right ctrl + / = media pause  <br />
