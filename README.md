@@ -1,5 +1,4 @@
 # mechro  <br />
-  <br />
 right ctrl + / = media pause  <br />
 right ctrl + . = media next  <br />
 right ctrl + , = media prev  <br />
