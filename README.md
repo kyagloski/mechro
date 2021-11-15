@@ -1,7 +1,7 @@
-# mechro
-
-right ctrl + / = media pause
-right ctrl + . = media next
-right ctrl + , = media prev
-win + z = next audio device 
-----(need to rerun script to detect newly plugged audio devices)
+# mechro  <br />
+  <br />
+right ctrl + / = media pause  <br />
+right ctrl + . = media next  <br />
+right ctrl + , = media prev  <br />
+win + z = next audio device   <br />
+----(need to rerun script to detect newly plugged audio devices)  <br />
