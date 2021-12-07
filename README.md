@@ -1,6 +1,5 @@
 # mechro  <br />
-*Auto hot key Macro script to control audio devices and media*    <br />
-**Script needs to be run with admin privs**   <br />
+**Auto hot key Macro script to control audio devices and media**    <br />
   <br />
 right ctrl + / = media pause  <br />
 right ctrl + . = media next  <br />
@@ -10,4 +9,6 @@ right ctrl + down = volume decrease (by 2) <br />
 win + z = next audio device   <br />
 ----(need to rerun script to detect newly plugged audio devices)  <br />
 <br />
-I recommend compiling this into an exe binary with ahk and throwing it in win startup dir 
+I recommend compiling this into an exe binary with ahk and throwing it in win startup dir  <br />
+
+*Script needs to be run with admin privs*   <br />
