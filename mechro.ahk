@@ -1,3 +1,7 @@
+;
+; AUDIO DEVICE SWITCHER CODE
+;
+
 Devices := {}
 IMMDeviceEnumerator := ComObjCreate("{BCDE0395-E52F-467C-8E3D-C4579291692E}", "{A95664D2-9614-4F35-A746-DE8DB63617E6}")
 
@@ -60,7 +64,13 @@ GetNextDeviceID()
     return SetDefaultEndpoint( GetDeviceID(Devices, ald[DeviceIndex]) )
 }
 
+;
+; KEY MAPPING CODE
+;
+
 <#Z:: SetDefaultEndpoint( GetNextDeviceID() )
 ^,::Send   {Media_Prev}
 ^/::Send   {Media_Play_Pause}
 ^.::Send  {Media_Next}
+^Up::SoundSet, +2
+^Down::SoundSet, -2
