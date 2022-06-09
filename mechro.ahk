@@ -68,9 +68,44 @@ GetNextDeviceID()
 ; KEY MAPPING CODE
 ;
 
-<#Z:: SetDefaultEndpoint( GetNextDeviceID() )
+<!<^Z:: SetDefaultEndpoint( GetNextDeviceID() )
 ^,::Send   {Media_Prev}
 ^/::Send   {Media_Play_Pause}
 ^.::Send  {Media_Next}
 ^Up::SoundSet, +2
 ^Down::SoundSet, -2
+
+;
+; IBM MODEL M WIN KEY REMAPPING CODE
+;
+
+; logout: ctrl + alt + L
+<^<!l::
+Run, rundll32.exe user32.dll`, LockWorkStation
+return
+
+; win key: alt + space
+<!Space::
+Keywait, LAlt
+Keywait, Space
+Send {LWin}
+return
+
+; win arrow controls: ctrl + alt + arrow
+<^<!Up::
+    SendInput, #{Up}
+return
+
+<^<!Down::
+    SendInput, #{Down}
+return
+
+<^<!Left::
+    SendInput, #{Left}
+return
+
+<^<!Right::
+    SendInput, #{Right}
+return
+
+
